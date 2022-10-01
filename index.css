@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  background-color: hsl(27, 66%, 92%);
+}
+main {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+  color: white;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+small {
+  font-size: 15px;
+}
+section {
+  padding: 25px 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+section h1 {
+  font-weight: 800;
+}
+#bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: 60px;
+}
+.h1 {
+  position: absolute;
+  background-color: black;
+  color: hsl(33, 100%, 98%);
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 5px;
+  margin-top: -25px;
+  margin-left: -2px;
+  display: none;
+}
+.h2 {
+  position: absolute;
+  background-color: black;
+  color: hsl(33, 100%, 98%);
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 5px;
+  margin-top: -25px;
+  margin-left: -2px;
+  display: none;
+}
+.days {
+  background-color: hsl(10, 79%, 65%);
+  width: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.days2 {
+  background-color: hsl(10, 79%, 65%);
+  width: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+.days:hover {
+  background-color: hsl(10, 74%, 70%);
+}
+.days2:hover {
+  background-color: hsl(10, 74%, 70%);
+}
+
+#wed-div {
+  background-color: hsl(186, 34%, 60%);
+  width: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#wed-div2 {
+  background-color: hsl(186, 34%, 60%);
+  width: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: none;
+}
+#wed-div:hover {
+  background-color: hsl(186, 50%, 76%);
+}
+#wed-div2:hover {
+  background-color: hsl(186, 50%, 76%);
+}
+#bar p {
+  margin-top: 15px;
+  font-weight: 500;
+  color: hsl(28, 10%, 53%);
+}
+hr {
+  border-top: hsl(33, 100%, 98%) solid 1px;
+}
+#my-balance p {
+  font-size: 25px;
+  font-weight: 800;
+}
+#my-balance small {
+  color: hsl(33, 100%, 98%);
+}
+#months {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+#months small {
+  color: hsl(28, 10%, 53%);
+}
+#month-total p {
+  font-weight: 800;
+  font-size: 30px;
+}
+#last-month p {
+  font-weight: 800;
+  text-align: right;
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .days2,
+  #wed-div2 {
+    display: block;
+  }
+
+  .days,
+  #wed-div {
+    display: none;
+  }
+}
